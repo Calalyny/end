@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Biblioteca para generar PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-content">
@@ -28,18 +26,14 @@
             </div>
         </div>
     </nav>
-
-    <!-- Main Content -->
     <div class="main-content">
         <div class="container">
             <h1><span class="gradient-text">Generación de Documentos</span></h1>
             
             <div class="invoice-grid">
-                <!-- Formulario de Facturación -->
                 <div class="invoice-form-container">
                     <h2>Datos para <span id="documentTypeText">Factura</span></h2>
                     
-                    <!-- Tipo de Documento -->
                     <div class="radio-group">
                         <div class="radio-option">
                             <input type="radio" id="factura" name="documentType" value="factura" checked>
@@ -51,7 +45,6 @@
                         </div>
                     </div>
 
-                    <!-- Datos del Cliente -->
                     <h3>Datos del Cliente</h3>
                     <div class="form-grid">
                         <div class="form-group">
@@ -118,7 +111,6 @@
                         </div>
                     </div>
 
-                    <!-- Método de Pago y Entrega -->
                     <h3>Método de Pago y Entrega</h3>
                     <div class="form-grid">
                         <div class="form-group">
@@ -142,13 +134,10 @@
                         </div>
                     </div>
 
-                    <!-- Producto Seleccionado -->
                     <h3>Producto Seleccionado</h3>
                     <div id="productDetails" class="product-details">
-                        <!-- El producto seleccionado se mostrará aquí -->
                     </div>
 
-                    <!-- Botones de Acción -->
                     <div class="form-actions">
                         <button type="button" id="backButton" class="btn-outline">
                             <i class="fas fa-arrow-left"></i> Volver a Productos
@@ -159,11 +148,9 @@
                     </div>
                 </div>
                 
-                <!-- Vista Previa del Documento -->
                 <div class="invoice-preview-container">
                     <h2>Vista Previa</h2>
                     <div class="invoice-preview" id="invoicePreview">
-                        <!-- Encabezado del Documento -->
                         <div class="invoice-header">
                             <div>
                                 <h2 class="invoice-title" id="previewDocumentType">FACTURA</h2>
@@ -179,7 +166,6 @@
                             </div>
                         </div>
 
-                        <!-- Datos del Cliente -->
                         <div class="invoice-customer">
                             <h3>Cliente:</h3>
                             <p id="previewName">Nombre del Cliente</p>
@@ -189,7 +175,6 @@
                             <p id="previewAddress"></p>
                         </div>
 
-                        <!-- Tabla de Productos -->
                         <table class="invoice-table">
                             <thead>
                                 <tr>
@@ -200,7 +185,6 @@
                                 </tr>
                             </thead>
                             <tbody id="previewItems">
-                                <!-- Los items se agregarán dinámicamente -->
                             </tbody>
                             <tfoot>
                                 <tr>
@@ -221,19 +205,16 @@
                             </tfoot>
                         </table>
 
-                        <!-- Información de Pago y Entrega -->
                         <div class="invoice-payment-info">
                             <p><strong>Método de Pago:</strong> <span id="previewPayment">-</span></p>
                             <p><strong>Método de Entrega:</strong> <span id="previewDelivery">-</span></p>
                         </div>
 
-                        <!-- Términos y Condiciones -->
                         <div class="invoice-terms">
                             <h4>Términos y Condiciones</h4>
                             <p>Garantía de 12 meses en todos nuestros productos. Para devoluciones y cambios, consulte nuestra política en www.Ferrusec.com/garantia</p>
                         </div>
 
-                        <!-- Pie de Página -->
                         <div class="invoice-footer">
                             <p>Gracias por su compra</p>
                             <p>Ferrusec PC Store - RUT: 76.123.456-7</p>
@@ -244,7 +225,6 @@
         </div>
     </div>
 
-    <!-- Animated background elements -->
     <div class="background-animation">
         <div class="blob blob1"></div>
         <div class="blob blob2"></div>
